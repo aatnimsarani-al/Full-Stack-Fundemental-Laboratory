@@ -1,0 +1,46 @@
+.circle-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #cccccc;
+  color: #777777;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+h1 {
+    text-align: center;
+}
+
+th {
+    background: #58ab50;
+}
+
+html {
+    background-color: #f4f4f9;
+}
+
+button {
+    background-color: #58ab50;
+}
+
+footer {
+    background-color: #58ab50;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
