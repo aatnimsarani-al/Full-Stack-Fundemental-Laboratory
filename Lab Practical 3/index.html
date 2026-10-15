@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            color: #333;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+        .navbar {
+            background-color: #3b82f6;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+        }
+        .navbar .brand-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .navbar nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+        .navbar nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .hero h1 {
+            font-size: 36px;
+            color: #222;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+        .btn-primary {
+            background-color: #3b82f6;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-primary:hover {
+            background-color: #2563eb;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 26px;
+            margin-bottom: 40px;
+            color: #222;
+        }
+        .features-section {
+            background-color: #ffffff;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            text-align: center;
+        }
+        .feature-item h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #222;
+        }
+        .feature-item p {
+            font-size: 14px;
+            color: #666;
+        }
+        .courses-section {
+            background-color: #f9f9f9;
+        }
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .course-card {
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .course-image {
+            background-color: #d1d5db;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4b5563;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .course-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .course-content h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #222;
+        }
+        .course-content p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        footer {
+            background-color: #3b82f6;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 14px;
+        }
+        footer p {
+            margin-bottom: 10px;
+        }
+        footer .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        footer .footer-links a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .features-grid, .courses-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="brand-name">LMS</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to the LMS Platform</h1>
+        <p>Your gateway to knowledge and success. Explore a wide variety of courses and resources.</p>
+        <a href="#" class="btn-primary">Get Started</a>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>Course Library</h3>
+                    <p>Access courses in a variety of fields and skill levels.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Interactive Discussions</h3>
+                    <p>Engage in live discussions and group projects.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Certification</h3>
+                    <p>Earn certificates to showcase your achievements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses-section">
+        <div class="container">
+            <h2 class="section-title">Popular Courses</h2>
+            <div class="courses-grid">
+                
+                <div class="course-card">
+                    <div class="course-image">Web Development</div>
+                    <div class="course-content">
+                        <h3>Web Development</h3>
+                        <p>Learn to build modern, responsive websites using HTML, CSS, and JavaScript.</p>
+                        <a href="#" class="btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">Data Science</div>
+                    <div class="course-content">
+                        <h3>Data Science</h3>
+                        <p>Master data analysis, visualization, and machine learning techniques.</p>
+                        <a href="#" class="btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">Digital Marketing</div>
+                    <div class="course-content">
+                        <h3>Digital Marketing</h3>
+                        <p>Understand SEO, social media marketing, and online branding strategies.</p>
+                        <a href="#" class="btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 LMS Platform. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+        </div>
+    </footer>
+
+</body>
+</html>
